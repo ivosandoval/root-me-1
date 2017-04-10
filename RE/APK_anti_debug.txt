@@ -32,5 +32,6 @@ look below, we seen "sha-256"
     }
 
 
-try decode sha256 hashes value: hashes[0] when decrypt we result: ****************** (use this site to decrypt: http://md5decrypt.net/en/Sha256/) -->> try hard this value to the submit -->> we have flag!! good luck to you!
+try decode sha256 hashes value: hashes[0] when decrypt we result: ****************** (use this site to decrypt: http://md5decrypt.net/en/Sha256/) 
+-->> try hard this value to the submit -->> we have flag!! good luck to you!
 
