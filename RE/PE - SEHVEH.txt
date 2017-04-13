@@ -1,0 +1,22 @@
+MOV EBX,495F4265
+eax = pass[4 bytes] ; 
+
+ADD DWORD PTR [EAX+B0],48335621
+
+CMP EAX,FF2CF8E5
+
+(pass[4bytes] + 48335621h) ^ 495F4265 = FF2CF8E5h
+=>> pass[4bytes] = ( 495F4265 ^ FF2CF8E5h ) - 48335621h
+				= b673ba80h - 48335621h = 6e40645fh (n@d_)
+
+
+
+above, we know [eax+B0] is add 48335621
+SUB DWORD PTR [EAX+B0],21486553
+
+MOV EBX,74406653
+
+CMP EAX,3C4C7440
+so we have : 
+(pass[4bytes] + 48335621 - 21486553) ^ 74406653  = 3C4C7440
+=>>> pass[4bytes] = (3C4C7440 ^ 74406653) + 21486553 - 48335621
